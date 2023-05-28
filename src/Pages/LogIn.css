@@ -23,6 +23,12 @@ input[type=text] {
   border-bottom: 3px solid #26a0da;
   }
 
+  input[type=password] {
+    border: 0;
+  outline: 0;
+  background: transparent;
+  border-bottom: 3px solid #26a0da;
+  }
 .login{
   background: rgba(248, 246, 246, 0.5);
     height: 55vh;
@@ -111,3 +117,7 @@ margin-bottom: 15px;
 }
 }
 
+::placeholder {
+  color: #26a0da;
+  opacity: 1; /* Firefox */
+}

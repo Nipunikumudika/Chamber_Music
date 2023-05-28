@@ -91,7 +91,6 @@ function Piano() {
       white.addEventListener("click", () => {
         const audio = new Audio();
         console.log(index);
-        console.log("ok");
         audio.src = require(`../sounds/white-keys/${index + 1}.mp3`);
         playSound(audio);
       });

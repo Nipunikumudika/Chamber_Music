@@ -86,9 +86,10 @@ function Welcome() {
               <span style={{ display: "inline-block", width: 57 }}></span>
               <input
                 style={{ fontSize: 15 }}
-                type="text"
+                type="password"
                 name="password"
                 placeholder="Enter your password"
+                backgroundImage="transparent"
                 value={password}
                 onChange={(inputPassword) => {
                   setPassword(inputPassword.target.value);

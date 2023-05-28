@@ -15,35 +15,33 @@ function Welcome() {
   const navigate = useNavigate();
   const location = useLocation();
   const handleCreateUser = async (event) => {
-    
     const postURL = "http://localhost:5000/users";
     event.preventDefault();
-    try{
+    try {
       const submitData = {
         username: username,
         password: password,
       };
 
       const response = await axios.post(postURL, submitData);
-        console.log(response);
-        alert("user added successfully");
-setUsername("");
-setPassword("");
-let playPiano = location.state.playPiano;
-if (playPiano == "1") {
-  navigate("/PianoPage");
-} else {
-  navigate("/Home", {
-    state: {
-      username: response.data.username,
-      userid: response.data._id,
-    },
-  });
-}
-    }catch(error){
+      console.log(response);
+      alert("user added successfully");
+      setUsername("");
+      setPassword("");
+      let playPiano = location.state.playPiano;
+      if (playPiano == "1") {
+        navigate("/PianoPage");
+      } else {
+        navigate("/Home", {
+          state: {
+            username: response.data.username,
+            userid: response.data._id,
+          },
+        });
+      }
+    } catch (error) {
       alert("Try using different username");
     }
-    
   };
 
   return (
@@ -57,7 +55,7 @@ if (playPiano == "1") {
               <div style={{ fontSize: 25, fontWeight: "bold" }}>Username</div>
               <span style={{ display: "inline-block", width: 50 }}></span>
               <input
-                style={{ fontSize: 15}}
+                style={{ fontSize: 15 }}
                 type="text"
                 name="username"
                 placeholder="Enter your username"
@@ -74,7 +72,7 @@ if (playPiano == "1") {
               <span style={{ display: "inline-block", width: 57 }}></span>
               <input
                 style={{ fontSize: 15 }}
-                type="text"
+                type="password"
                 name="password"
                 placeholder="Enter your password"
                 value={password}
