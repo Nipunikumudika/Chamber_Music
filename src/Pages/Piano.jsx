@@ -91,6 +91,7 @@ function Piano() {
       white.addEventListener("click", () => {
         const audio = new Audio();
         console.log(index);
+        console.log("ok");
         audio.src = require(`../sounds/white-keys/${index + 1}.mp3`);
         playSound(audio);
       });
@@ -259,19 +260,19 @@ function Piano() {
 
       <div className="piano-container">
         <div className="white-key key" id="1">
-          C
+          A
         </div>
         <div className="black-key key black-1" id="22">
           1
         </div>
         <div className="white-key key" id="2">
-          D
+          S
         </div>
         <div className="black-key key black-2" id="23">
           2
         </div>
         <div className="white-key key" id="3">
-          E
+          D
         </div>
         <div className="white-key key" id="4">
           F
@@ -286,85 +287,85 @@ function Piano() {
           4
         </div>
         <div className="white-key key" id="6">
-          A
+          H
         </div>
         <div className="black-key key black-5" id="26">
           5
         </div>
         <div className="white-key key" id="7">
-          B
+          J
         </div>
         <div className="white-key key" id="8">
-          C
+          K
         </div>
         <div className="black-key key black-6" id="27">
           6
         </div>
         <div className="white-key key" id="9">
-          D
+          L
         </div>
         <div className="black-key key black-7" id="28">
           7
         </div>
         <div className="white-key key" id="10">
-          E
+          ;
         </div>
         <div className="white-key key" id="11">
-          F
+          '
         </div>
         <div className="black-key key black-8" id="29">
           8
         </div>
         <div className="white-key key" id="12">
-          G
+          Z
         </div>
         <div className="black-key key black-9" id="30">
           9
         </div>
         <div className="white-key key" id="13">
-          A
+          X
         </div>
         <div className="black-key key black-10" id="31">
           0
         </div>
         <div className="white-key key" id="14">
-          B
+          C
         </div>
         <div className="white-key key" id="15">
-          C
+          V
         </div>
         <div className="black-key key black-11" id="32">
           Q
         </div>
         <div className="white-key key" id="16">
-          D
+          B
         </div>
         <div className="black-key key black-12" id="33">
           W
         </div>
         <div className="white-key key" id="17">
-          E
+          N
         </div>
         <div className="white-key key" id="18">
-          F
+          M
         </div>
         <div className="black-key key black-13" id="34">
           E
         </div>
         <div className="white-key key" id="19">
-          G
+          ,
         </div>
         <div className="black-key key black-14" id="35">
           R
         </div>
         <div className="white-key key" id="20">
-          A
+          .
         </div>
         <div className="black-key key black-15" id="36">
           T
         </div>
         <div className="white-key key" id="21">
-          B
+          /
         </div>
       </div>
       <center>
