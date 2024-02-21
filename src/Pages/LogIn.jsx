@@ -107,7 +107,7 @@ function Welcome() {
             >
               Login
             </button>
-            <p style={{ color: "blue" ,cursor: "pointer"}} onClick={SignUp}>
+            <p style={{ color: "blue" ,cursor: "pointer",fontWeight:"bold"}} onClick={SignUp}>
               <u>SignUp</u>
             </p>
           </form>

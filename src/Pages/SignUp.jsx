@@ -43,6 +43,14 @@ function Welcome() {
       alert("Try using different username");
     }
   };
+  function LogIn() {
+    let playPiano = location.state.playPiano;
+    navigate("/LogInPage", {
+      state: {
+        playPiano: playPiano,
+      },
+    });
+  }
 
   return (
     <div>
@@ -92,6 +100,9 @@ function Welcome() {
             >
               SignUp
             </button>
+            <p style={{ color: "blue" ,cursor: "pointer",fontWeight:"bold"}} onClick={LogIn}>
+              <u>LogIn</u>
+            </p>
           </form>
           <br />
         </div>
