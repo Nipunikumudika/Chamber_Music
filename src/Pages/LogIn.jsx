@@ -69,7 +69,7 @@ function Welcome() {
               <div style={{ fontSize: 25, fontWeight: "bold" }}>Username</div>
               <span style={{ display: "inline-block", width: 50 }}></span>
               <input
-                style={{ fontSize: 15 }}
+                 style={{ fontSize: 20,fontWeight:"bold" }}
                 type="text"
                 name="username"
                 placeholder="Enter your username"
@@ -85,7 +85,7 @@ function Welcome() {
               <div style={{ fontSize: 25, fontWeight: "bold" }}>Password</div>
               <span style={{ display: "inline-block", width: 57 }}></span>
               <input
-                style={{ fontSize: 15 }}
+                style={{ fontSize: 20,fontWeight:"bold" }}
                 type="password"
                 name="password"
                 placeholder="Enter your password"
