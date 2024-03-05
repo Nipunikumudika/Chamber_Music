@@ -1,17 +1,12 @@
 import "./Home.scss";
-import v1 from "../Videos/1.mp4";
-import v2 from "../Videos/2.mp4";
-import v3 from "../Videos/3.mp4";
-import v4 from "../Videos/4.mp4";
-import v5 from "../Videos/5.mp4";
 
-import backgroundimg from "../Images/background.jpg";
 import { Route, Routes, useNavigate } from "react-router-dom";
 import { useState, useEffect } from "react";
 import NavBar from "../Components/NavBar";
 import Footer from "../Components/Footer";
 
 function Home() {
+  const backgroundimg = '/Images/background.jpg';
   let no = 0;
 
   useEffect(() => {
@@ -75,15 +70,15 @@ function Home() {
         <section className="home">
           <video
             className="video-slider active"
-            src={v1}
+            src="/Videos/1.mp4"
             autoPlay
             muted
             loop
           ></video>
-          <video className="video-slider" src={v2} autoPlay muted loop></video>
-          <video className="video-slider" src={v3} autoPlay muted loop></video>
-          <video className="video-slider" src={v4} autoPlay muted loop></video>
-          <video className="video-slider" src={v5} autoPlay muted loop></video>
+          <video className="video-slider" src="/Videos/2.mp4" autoPlay muted loop></video>
+          <video className="video-slider" src="/Videos/3.mp4" autoPlay muted loop></video>
+          <video className="video-slider" src="/Videos/4.mp4" autoPlay muted loop></video>
+          <video className="video-slider" src="/Videos/5.mp4" autoPlay muted loop></video>
           <div className="content active">
             <h1><stroke>Chamber Music Grand Piano</stroke></h1>
             <p>

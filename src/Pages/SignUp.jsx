@@ -1,15 +1,16 @@
 import "./LogIn.css";
-import img1 from "../Images/img1.jpg";
-import img2 from "../Images/img2.jpeg";
-import img3 from "../Images/img3.jpg";
-import img4 from "../Images/img4.jpeg";
-import img5 from "../Images/img5.jpg";
 import axios from "axios";
 import { useState } from "react";
 import { Route, Routes, useNavigate } from "react-router-dom";
 import { useLocation } from "react-router-dom";
 
 function Welcome() {
+  const img1 = '/Images/img1.jpg';
+  const img2 = '/Images/img2.jpg';
+  const img3 = '/Images/img3.jpg';
+  const img4 = '/Images/img4.jpg';
+  const img5 = '/Images/img5.jpg';
+  
   const [username, setUsername] = useState();
   const [password, setPassword] = useState();
   const navigate = useNavigate();

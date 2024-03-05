@@ -82,7 +82,7 @@ function Piano() {
       black.addEventListener("click", () => {
         const audio = new Audio();
         console.log(index);
-        audio.src = require(`../sounds/black-keys/${index + 1}.mp3`);
+        audio.src = `/sounds/black-keys/${index + 1}.mp3`;
         playSound(audio);
       });
     });
@@ -92,7 +92,7 @@ function Piano() {
         const audio = new Audio();
         console.log(index);
         console.log("ok");
-        audio.src = require(`../sounds/white-keys/${index + 1}.mp3`);
+        audio.src = `/sounds/white-keys/${index + 1}.mp3`;
         playSound(audio);
       });
     });
@@ -142,7 +142,7 @@ function Piano() {
         const audio = new Audio();
         audio.pause();
         audio.currentTime = 0;
-        audio.src = require(`../sounds/white-keys/${namewhite}.mp3`);
+        audio.src = `/sounds/white-keys/${namewhite}.mp3`;
         playSound(audio);
         arr.push(e.key);
       }
@@ -154,7 +154,7 @@ function Piano() {
         audio.pause();
         audio.currentTime = 0;
         console.log(nameblack);
-        audio.src = require(`../sounds/black-keys/${nameblack}.mp3`);
+        audio.src = `/sounds/black-keys/${nameblack}.mp3`;
         playSound(audio);
         arr.push(e.key);
       }

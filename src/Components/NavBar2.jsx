@@ -1,8 +1,10 @@
 import "./NavBar.scss";
 import { Route, Routes, useNavigate } from "react-router-dom";
 import { useLocation } from "react-router-dom";
-import personicon from "../Images/personicon.png";
+
 function NavBar() {
+  const personicon = '/Images/personicon.jpg';
+
   const navigate = useNavigate();
   const location = useLocation();
 
